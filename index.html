@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portafolio personal de Luis Angel Alvarez Ortega" />
+    <meta
+      name="description"
+      content="Portafolio personal de Luis Angel Alvarez Ortega"
+    />
     <title>Portafolio | Luis Angel Alvarez Ortega</title>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
@@ -11,15 +14,107 @@
   <body>
     <div class="page">
       <header class="header">
-        <!-- Aquí construiremos la sección principal del portafolio -->
+        <section class="profile">
+          <div class="profile__content">
+            <h1 class="profile__title">Luis Angel<br />Alvarez Ortega</h1>
+
+            <p class="profile__subtitle">
+              Desarrollador web en formación
+            </p>
+
+            <p class="profile__description">
+              Soy estudiante de desarrollo web con interés en crear sitios responsivos,
+              organizados y funcionales. Este portafolio reúne algunos de los proyectos
+              que he desarrollado durante mi formación.
+            </p>
+
+            <nav class="profile__links">
+              <a class="profile__link" href="#" target="_blank">Descargar CV</a>
+              <a class="profile__link" href="https://github.com/angelfxx" target="_blank">Enlace a GitHub</a>
+              <a class="profile__link" href="mailto:hojidreamskies@gmail.com">Hablemos</a>
+            </nav>
+          </div>
+
+          <img
+            class="profile__image"
+            src="./images/profile.jpg"
+            alt="Foto de perfil de Luis Angel Alvarez Ortega"
+          />
+        </section>
       </header>
 
       <main class="content">
-        <!-- Aquí irán las secciones del proyecto -->
+        <section class="skills">
+          <h2 class="section-title">Habilidades y herramientas</h2>
+
+          <ul class="skills__list">
+            <li class="skills__item">HTML</li>
+            <li class="skills__item">CSS</li>
+            <li class="skills__item">JavaScript</li>
+            <li class="skills__item">Git</li>
+            <li class="skills__item">GitHub</li>
+          </ul>
+        </section>
+
+        <section class="projects">
+          <h2 class="section-title">Proyectos destacados</h2>
+
+          <div class="projects__cards">
+            <article class="project-card">
+              <img
+                class="project-card__image"
+                src="./images/project-cafe.jpg"
+                alt="Captura del proyecto de cafetería"
+              />
+
+              <div class="project-card__content">
+                <h3 class="project-card__title">Página web de una cafetería</h3>
+                <p class="project-card__description">
+                  Desarrollo de una landing page responsiva para una cafetería,
+                  aplicando HTML, CSS, formularios y metodología BEM.
+                </p>
+
+                <div class="project-card__links">
+                  <a class="project-card__link" href="#" target="_blank">Demo en vivo</a>
+                  <a class="project-card__link" href="https://github.com/angelfxx/web_project_coffeeshop_es" target="_blank">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img
+                class="project-card__image"
+                src="./images/project-placeholder.jpg"
+                alt="Imagen representativa de mi proyecto"
+              />
+
+              <div class="project-card__content">
+                <h3 class="project-card__title">Mi proyecto</h3>
+                <p class="project-card__description">
+                  Descripción breve del proyecto.
+                </p>
+
+                <div class="project-card__links">
+                  <a class="project-card__link" href="#" target="_blank">Demo en vivo</a>
+                  <a class="project-card__link" href="#" target="_blank">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
       </main>
 
       <footer class="footer">
-        <!-- Aquí irá el pie de página -->
+        <h2 class="footer__title">Contacto</h2>
+        <a class="footer__email" href="mailto:hojidreamskies@gmail.com">
+          hojidreamskies@gmail.com
+        </a>
+
+        <ul class="footer__social">
+          <li><a class="footer__link" href="#" target="_blank">LinkedIn</a></li>
+          <li><a class="footer__link" href="https://github.com/angelfxx" target="_blank">GitHub</a></li>
+          <li><a class="footer__link" href="#" target="_blank">Instagram</a></li>
+        </ul>
       </footer>
     </div>
   </body>

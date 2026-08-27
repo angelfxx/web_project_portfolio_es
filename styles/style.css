@@ -131,9 +131,16 @@ body {
 }
 
 .skills__item {
-  font-size: 18px;
-  font-weight: 700;
-  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills__icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 .projects {

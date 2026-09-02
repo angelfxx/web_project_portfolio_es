@@ -44,6 +44,7 @@ body {
 }
 
 .page {
+  position: relative;
   min-width: 320px;
   max-width: 1440px;
   min-height: 100vh;
@@ -51,6 +52,48 @@ body {
   font-family: "Open Sans", Arial, sans-serif;
   color: #ffffff;
   background-color: #080808;
+  overflow: hidden;
+}
+
+.page::before {
+  content: "";
+  position: absolute;
+  top: -220px;
+  left: calc(50% - 720px);
+  width: 900px;
+  height: 900px;
+  background: radial-gradient(
+    circle,
+    rgba(109, 109, 255, 0.35) 0%,
+    rgba(109, 109, 255, 0.12) 35%,
+    transparent 70%
+  );
+  z-index: 0;
+  pointer-events: none;
+}
+
+.page::after {
+  content: "";
+  position: absolute;
+  top: 220px;
+  right: calc(50% - 720px);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(
+    circle,
+    rgba(0, 180, 255, 0.24) 0%,
+    rgba(0, 180, 255, 0.08) 38%,
+    transparent 70%
+  );
+  z-index: 0;
+  pointer-events: none;
+}
+
+.header,
+.content,
+.footer {
+  position: relative;
+  z-index: 1;
 }
 
 .profile {
@@ -159,12 +202,29 @@ body {
   overflow: hidden;
 }
 
+.project-card__image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
 .project-card__image {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 100%;
   object-fit: cover;
-  background-color: #6d6dff;
+}
+
+.project-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 45%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+  pointer-events: none;
 }
 
 .project-card__content {
